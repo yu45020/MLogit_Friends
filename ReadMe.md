@@ -1,4 +1,3 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 # Multinomial Logit and Variants From Scratch
 Model files are standard alone
 * Standard Multinomial Logit: `mlogit.py`
