@@ -6,13 +6,15 @@ Model files are standard alone
 The `utils.py` file contains stable version of softmax function and numeric hessian approximation via the central finite difference. The Hessian matrix may not be invertible or the inverted matrix has non-positive values in diagonal, so standard error is calculated by SVD decomposition on the Hessian and inverted diagonal matrix. 
 
 Note, the `scipy.optimize.minimize` changes beta when calculating gradient and hessian, so caching forward calculation is not necessary.
+
+Math equations are not displayed properly in Github.
 # Standard Multinomial Logit
 
 Assume each observation is IID.
 
 ## Notation
 
-N is number of observation, K is number of choices, M is number of features, X: [N,K,M], Y: [N,K], and $\beta$: [M,]
+N is number of observation, K is number of choices, M is number of features, X: [N,T,K,M], Y: [N,T], and $\beta$: [M,]
 
 Utility for choice $k$ is 
 $$
